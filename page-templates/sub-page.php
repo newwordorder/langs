@@ -1,12 +1,12 @@
 <?php
 /**
-* Template Name: Page
+* Template Name: Sub-page
 *
 *
 * @package understrap
 */
 
-get_header();
+get_header('internal');
 
 ?>
 
@@ -25,20 +25,9 @@ $hidePageTitle = get_field('hide_page_title');
 
 ?>
 
-<section id="sub-header" class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?> imagebg videobg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>" data-overlay="5">
+<section id="sub-header" class="page-header page-header--sub-page bg---light">
 
 
-  <?php if( !empty($image) ):
-
-    // vars
-    $url = $image['url'];
-    $alt = $image['alt'];
-
-  ?>
-    <div class="background-image-holder">
-      <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
-    </div>
-  <?php endif; ?>
 
 <div class="container">
   <div class="row justify-content-center">

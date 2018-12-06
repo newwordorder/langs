@@ -5,9 +5,10 @@
 
 $primary: #DC3E2A;
 
-$light: lighten($primary, 17%);
 
-$heading-color: #000;
-$body-color: #000;
+$heading-color: #414141;
+$body-color: #62696F;
 
-$dark: #000;
+$dark: #414141;
+
+$grid-gutter-width: 12px !default;

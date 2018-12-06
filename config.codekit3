@@ -154,12 +154,30 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/header-internal.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/header-internal.php",
+		"oF": 0
+		},
 	"/header.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/header.php",
 		"oF": 0
+		},
+	"/img/bob.png": {
+		"ft": 32768,
+		"iS": 39757,
+		"oA": 0,
+		"oAP": "/img/bob.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/img/logo--black.svg": {
 		"ft": 2097152,
@@ -397,6 +415,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/header-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/header-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/header.js": {
 		"ft": 64,
 		"ma": 0,
@@ -483,6 +511,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/popper-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/scripts-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/scripts-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -873,6 +911,13 @@
 		"oAP": "/page-templates/blocks/carousel.php",
 		"oF": 0
 		},
+	"/page-templates/blocks/client-logos.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/blocks/client-logos.php",
+		"oF": 0
+		},
 	"/page-templates/blocks/cta.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -908,11 +953,25 @@
 		"oAP": "/page-templates/blocks/line-break.php",
 		"oF": 0
 		},
+	"/page-templates/blocks/pre-footer-cta.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/blocks/pre-footer-cta.php",
+		"oF": 0
+		},
 	"/page-templates/blocks/projects.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/page-templates/blocks/projects.php",
+		"oF": 0
+		},
+	"/page-templates/blocks/tabs.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/blocks/tabs.php",
 		"oF": 0
 		},
 	"/page-templates/blocks/text-block.php": {
@@ -948,6 +1007,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/page-templates/page.php",
+		"oF": 0
+		},
+	"/page-templates/sub-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/sub-page.php",
 		"oF": 0
 		},
 	"/page.php": {

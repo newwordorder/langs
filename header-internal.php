@@ -30,7 +30,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 	<!-- ******************* The Navbar Area ******************* -->
-<div id="header" class="header" >
+<div id="header" class="header--internal -white" >
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 

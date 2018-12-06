@@ -4963,45 +4963,8 @@ pre {
 .heading-block .h6 {
   margin-bottom: 0;
 }
-/*! -- Stack Colours -- */
-.bg--dark .bg--secondary {
-  background: #343434;
-}
 
-/*! -- Stack Links -- */
-a {
-  color: #4a90e2;
-}
 
-a:hover {
-  color: #2275d7;
-  text-decoration: none;
-}
-
-a.block {
-  font-weight: normal;
-  text-decoration: none;
-  color: #666666;
-}
-
-p a,
-span a,
-label a {
-  font-size: 1em;
-  text-decoration: underline;
-  font-weight: 400;
-  line-height: 1.85714286em;
-}
-
-p+a:not(.btn) {
-  font-size: 0.85714286em;
-  line-height: 2.16666667em;
-}
-
-.imagebg:not(.image--light) a {
-  color: #fff;
-  font-weight: 600;
-}
 
 /*! -- Stack Tables -- */
 table {

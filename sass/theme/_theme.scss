@@ -11,6 +11,12 @@ body {
   background: $white;
 }
 
+.container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+}
+
 section {
 
   &.bg {
@@ -82,23 +88,23 @@ section {
 .space-below {
 
   &--none {
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   &--sm {
-    margin-bottom: 25px;
+    padding-bottom: 25px;
   }
 
   &--md {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 
   &--lg {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 
   &--xlg {
-    margin-bottom: 200px;
+    padding-bottom: 200px;
   }
 
 }
@@ -161,7 +167,7 @@ section {
   text-transform: uppercase;
   color: $primary;
   padding: 0.8em 1.6em;
-  border-radius: 0px;
+  border-radius: 3px;
 
   &--solid {
     background: $primary;
@@ -249,29 +255,22 @@ section {
 .page-header {
 
   &--home {
-    padding: 200px 0;
-    height: 100vh;
-    min-height: 400px;
+    padding: 200px 0 150px;
     position: relative;
-
-    & .pos-vertical-center {
-      transform: translateY(-20%);
-    }
   }
 
   &--page {
-    padding: 250px 0 100px;
-    max-height: 800px;
-    min-height: 400px;
+    padding: 200px 0 100px;
     position: relative;
+  }
 
-    & .pos-vertical-center {
-      transform: translateY(-20%);
-    }
+  &--sub-page {
+    padding: 150px 0 80px;
+    position: relative;
   }
 
   padding: 200px 0 100px;
-  background-color: $dark;
+  background-color: $light;
 
   @include media-breakpoint-down(sm) {
     padding: 150px 0 50px;
@@ -514,38 +513,5 @@ section {
 .page-title {
 
 
-  &--home {
-    position: relative;
-
-
-    &:before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: -120px;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 100px;
-      width: 2px;
-      background: #fff;
-      opacity: 0.5;
-      margin: 0 auto;
-    }
-
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      bottom: -120px;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 100px;
-      width: 2px;
-      background: #fff;
-      opacity: 0.5;
-      margin: 0 auto;
-    }
-
-  }
 
 }

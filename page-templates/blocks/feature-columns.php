@@ -14,7 +14,7 @@ if( get_row_layout() == 'feature_columns' ):
 
   <?php if( have_rows('feature_columns_column') ): ?>
     <div class="container space-below--<?php echo $spaceBelow ?>">
-      <div class="row justify-content-center">
+      <div class="row">
         <?php while( have_rows('feature_columns_column') ): the_row();
 
           $text = get_sub_field('text_block');
@@ -63,7 +63,7 @@ if( get_row_layout() == 'feature_columns' ):
                <?php if( $imageFormat == 'none' ): ?>
                 <img class="feature-column__image" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
                <?php endif; //end none ?>
-                <?php if( $boxed == 'yes' ): ?><div class="feature-column--boxed__inner"><?php endif; ?>
+                
               <?php endif; ?>
             <?php endif; ?>
 
@@ -79,13 +79,13 @@ if( get_row_layout() == 'feature_columns' ):
               <?php endif; ?>
             <?php endif; ?>
 
-            <?php if( $boxed == 'yes' && $type == 'none' ): ?><div class="feature-column--boxed__inner"><?php endif; ?>
+            <?php if( $boxed == 'yes' ): ?><div class="feature-column--boxed__inner"><?php endif; ?>
 
               <?php echo $text ?>
 
               <?php get_template_part( 'page-templates/blocks/block-partials/buttons' ); ?>
 
-              <?php if( $boxed == 'yes' ): ?></div><?php endif; ?>
+              <?php if( $boxed == 'yes'  ): ?></div><?php endif; ?>
 
             </div>
           </div>

@@ -12,18 +12,15 @@
 
 
 
-<footer id="footer" class="footer bg--dark">
+<footer id="footer" class="footer">
 		<div class="container">
 
 				<div class="row align-items-center">
-						<div class="col-sm-4">
-								<p>© Copyright Langs Building Supplies | <a href="<?php echo get_home_url(); ?>/privacy-policy">Privacy Policy</a></p>
+						<div class="col-sm-8">
+								<p>Copyright © 2018 Langs Building Supplies, All Rights Reserved</p>
+								<p> <a href="<?php echo get_home_url(); ?>/privacy-policy">Privacy Policy</a> | Site by NWO</p>
 						</div>
-						<div class="col-sm-4 text-center">
-							<a href="<?php echo get_home_url(); ?>" id="" class="footer__logo">
-								<img class="footer__logo" src="<?php bloginfo('template_directory'); ?>/img/logo--white.svg" alt="Logo">
-							</a>
-						</div>
+						
 						<div class="col-sm-4">
 							<?php wp_nav_menu(
 								array(
@@ -57,21 +54,13 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/smooth-scroll.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/ytplayer.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/aos.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/instagram.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
 
 <script>
 	AOS.init();
 </script>
 
-<script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'awesome',
-        clientId: '51714b77e50441d0b9d7cd0e91bb8b7b'
-    });
-    feed.run();
-</script>
+
 
 </body>
 

@@ -33,7 +33,7 @@ var js = {};
             "click #mobile-nav-toggle": "toggle_mobile_nav"
         },
         toggle_mobile_nav: function (e) {
-            e.preventDefault(), $("#header").toggleClass("-open")
+            e.preventDefault(), $(".header").toggleClass("-open")
         }
     }), js.prism = js.model.extend({
         events: {
@@ -62,11 +62,11 @@ var js = {};
         events: {
             ready: "ready",
             scroll: "scroll",
-            "mouseenter #header": "mouseenter",
-            "mouseleave #header": "mouseleave"
+            "mouseenter .header": "mouseenter",
+            "mouseleave .header": "mouseleave"
         },
         ready: function () {
-            this.$header = $("#header"), this.$sub_header = $("#sub-header"), this.active = 1
+            this.$header = $(".header"), this.$sub_header = $("#sub-header"), this.active = 1
         },
         mouseenter: function () {
             var e = $(window).scrollTop();
