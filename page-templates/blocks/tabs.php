@@ -16,11 +16,11 @@ if( get_row_layout() == 'tabs' ):
 
 
   <?php $counter = 0;?>
-    <div class="container space-below--<?php echo $spaceBelow ?>" style="position:relative;margin-top:-50px;z-index:100;">
+    <div class="tabby-container" style="position:relative;z-index:10;">
 
-      <div class="row justify-content-center">
+      <div class="row">
 
-          <ul class="nav nav-pills" id="myTab" role="tablist">
+          <ul class="tabby nav nav-pills nav-justified w-100" id="navTab" role="tablist">
 
         <?php	// loop through the rows of data
         while ( have_rows('tabs') ) : the_row();
@@ -61,22 +61,15 @@ if( have_rows('tabs') ):
 
 
 <?php $counter = 0;?>
-  <div class="container space-below--<?php echo $spaceBelow ?>">
-
-    <div class="row justify-content-center align-items-center">
-
-        <div class="tab-content" id="nav-tabContent">
 
       <?php	// loop through the rows of data
       while ( have_rows('tabs') ) : the_row();
 
-      $title = get_sub_field('title');
+      $title = get_sub_field('title'); ?>
 
-      ?>
-
-      <div class="tab-pane fade " id="tab-pane-<?php echo $counter ?>" role="tabpanel" aria-labelledby="tab-<?php echo $counter ?>">
-          <h2><?php  echo $title ?></h2>
-    </div>
+        <div class="tab-pane fade " id="tab-pane-<?php echo $counter ?>" role="tabpanel" aria-labelledby="tab-<?php echo $counter ?>">
+            <?php get_template_part( 'page-templates/blocks' ); ?>
+        </div>
 
 
       

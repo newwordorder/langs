@@ -172,6 +172,14 @@
       width: 100%;
       flex-direction: column;
 
+      .btn--phone a {
+        margin:0;
+      }
+
+      li {
+        margin: 6px 0;
+      }
+
       a {
         padding: 1rem;
         color: $dark;
