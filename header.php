@@ -37,19 +37,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="header__inner" >
 					<div class="d-flex align-items-center w-100">
 					
-<div class="col-md-3">
-				<a href="<?php echo get_home_url(); ?>" id="site-logo" class="header__logo">
+					<div class="col-md-3">
+									<a href="<?php echo get_home_url(); ?>" id="site-logo" class="header__logo">
 
-					<img class="logo logo--white" src="<?php bloginfo('template_directory'); ?>/img/logo--white.svg" alt="Langs Building Supplies">
-					<img class="logo logo--black" src="<?php bloginfo('template_directory'); ?>/img/logo--black.svg" alt="Langs Building Supplies">
+										<img class="logo logo--white" src="<?php bloginfo('template_directory'); ?>/img/logo--white.svg" alt="Langs Building Supplies">
+										<img class="logo logo--black" src="<?php bloginfo('template_directory'); ?>/img/logo--black.svg" alt="Langs Building Supplies">
 
-				</a>
-</div>
-				<a id="toggleMenu" class="toggle-menu">
-						<span class="line"></span>
-						<span class="line"></span>
-						<span class="line"></span>
-				</a>
+									</a>
+					</div>
+					<a id="toggleMenu" class="toggle-menu">
+							<span class="line"></span>
+							<span class="line"></span>
+							<span class="line"></span>
+					</a>
 
 <div class="col">
 				<?php wp_nav_menu(
