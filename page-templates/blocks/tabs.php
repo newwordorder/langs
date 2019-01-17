@@ -76,10 +76,7 @@ if( have_rows('tabs') ):
       <?php $counter++; // add one per row ? ?>
     <?php  endwhile; ?>
 
-    </div>
-
-  </div>
-</div>
+    
 
 <?php else :
 
