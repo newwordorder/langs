@@ -9,10 +9,6 @@ body {
   background: $dark;
 }
 
-.page {
-  background: $white;
-}
-
 .container {
   padding-right: 1rem;
   padding-left: 1rem;
@@ -478,12 +474,6 @@ section {
 }
 
 
-.form-control {
-  border-radius: 0px !important;
-  border: 2px solid #000 !important;
-}
-
-
 .blog-categories {
   margin: 0;
   padding: 0;
@@ -511,9 +501,6 @@ section {
   }
 }
 
-
-.page-title {
-
-
-
+a {
+  color: $primary;
 }

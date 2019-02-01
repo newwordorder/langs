@@ -40,7 +40,34 @@
 </footer>
 
 
+<div class="search-form ">
+	<span class="search-close">
+		<i class="fas fa-times"></i>
+	</span>
+	<?php get_template_part( 'searchform' ); ?>
+</div>
 
+<script>
+
+(function($) {
+	$(".toggle-menu").click(function () {
+		$(".toggle-menu,.header-nav").toggleClass("is-active");
+	});
+})( jQuery );
+
+(function($) {
+	$(".btn--search a").click(function () {
+		$(".search-form").toggleClass("is-open");
+	});
+	
+})( jQuery );
+
+(function($) {
+	$(".search-close").click(function () {
+		$(".search-form").removeClass("is-open");
+	});
+})( jQuery );	
+</script>
 
 
 <?php wp_footer(); ?>

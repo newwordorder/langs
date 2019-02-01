@@ -25,16 +25,9 @@
 
 	</header><!-- .entry-header -->
 
-	<div class="entry-summary">
 
-		<?php the_excerpt(); ?>
+	<hr>
 
-	</div><!-- .entry-summary -->
-
-	<footer class="entry-footer">
-
-		<?php understrap_entry_footer(); ?>
-
-	</footer><!-- .entry-footer -->
+	
 
 </article><!-- #post-## -->

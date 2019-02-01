@@ -69,6 +69,10 @@ p {
   &--home {
     margin-bottom: 1rem;
   }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 2em;
+  }
 }
 
 p:last-of-type {
