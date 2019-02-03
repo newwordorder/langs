@@ -18,7 +18,7 @@
 				<div class="row align-items-center">
 						<div class="col-sm-8">
 								<p>Copyright © 2018 Langs Building Supplies, All Rights Reserved</p>
-								<p> <a href="<?php echo get_home_url(); ?>/privacy-policy">Privacy Policy</a> | Site by NWO</p>
+								<p> <a href="<?php echo get_home_url(); ?>/privacy-policy">Privacy Policy</a> | <a href="http://newwordorder.com.au">Site by NWO</a></p>
 						</div>
 						
 						<div class="col-sm-4">
