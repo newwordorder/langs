@@ -28,6 +28,7 @@ if( have_rows('blocks') ) {
          get_template_part( 'page-templates/blocks/blog' );
          get_template_part( 'page-templates/blocks/client-logos' );
          get_template_part( 'page-templates/blocks/tabs' );
+         get_template_part( 'page-templates/blocks/timeline' );
 
       }
 

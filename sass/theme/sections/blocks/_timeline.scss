@@ -1,0 +1,113 @@
+.timeline {
+    align-items: stretch;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        border-right: 1px dashed $primary;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        bottom: 0;
+        @include media-breakpoint-down(sm) {
+            left: 0%;
+        }
+    }
+
+    &__col {
+        padding: 0 3rem 1rem;
+        flex: 1;
+
+    }
+
+
+    &__title {
+        position: relative;
+        &:before {
+            position: absolute;
+            content: "";
+            height: 1rem;
+            width: 1rem;
+            background-color: $primary;
+            border-radius: 50%;
+            right: -3.5rem;
+            left: auto;
+        }
+    }
+
+    &__text {
+        order: 1;
+        text-align: right;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+
+    }
+  
+    &__image {
+        order: 2;
+        padding-right: 0;
+        padding-left: 3rem;
+    }
+
+    &:nth-of-type(odd) {
+        .timeline__text {
+            order: 2;
+            text-align: left;
+            border-bottom: none;
+            border-right: none;
+        }
+    
+        .timeline__image {
+            order: 1;
+            padding-left: 0;
+            padding-right: 3rem;
+  
+        }
+
+        .timeline__title {
+            position: relative;
+            &:before {
+                position: absolute;
+                content: "";
+                height: 1rem;
+                width: 1rem;
+                background-color: $primary;
+                border-radius: 50%;
+                left: -3.5rem;
+                right: auto;
+            }
+        }
+
+    }
+
+    @include media-breakpoint-down(sm) {
+        margin-left: 1rem;
+        &__text {
+          order: 2;
+          border-bottom: none!important;
+          border-right: none;
+          text-align: left;
+        }
+    
+        &__image {
+          order: 1;
+          border-bottom: none!important;
+          padding: 0 2rem !important;
+        }
+        &__title {
+            &:before {
+                left: -2.5rem!important;
+            }
+        }
+        &__col {
+            padding: 2rem;
+            flex: none;
+    
+        }
+      }
+      
+    
+}
+
