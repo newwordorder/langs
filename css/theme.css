@@ -15582,7 +15582,8 @@ hr.short {
     padding: 0 3rem 1rem;
     flex: 1; }
   .timeline__title {
-    position: relative; }
+    position: relative;
+    text-transform: none; }
     .timeline__title:before {
       position: absolute;
       content: "";

@@ -24,6 +24,7 @@
 
     &__title {
         position: relative;
+        text-transform: none;
         &:before {
             position: absolute;
             content: "";
