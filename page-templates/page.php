@@ -41,8 +41,8 @@ $hidePageTitle = get_field('hide_page_title');
   <?php endif; ?>
 
 <div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-10">
+  <div class="row">
+    <div class="col-md-8">
         <h1 class="page-title"><?php the_title(); ?></h1>
     </div>
   </div>
