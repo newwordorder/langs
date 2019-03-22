@@ -43,13 +43,14 @@ h6,
 h6,
 .h6 {
   font-family: $font-sans;
-  
+
   text-transform: uppercase;
 }
 
 p {
   color: $body-color;
   font-family: $font-sans;
+  margin-bottom: 1rem;
 }
 
 .lead {
@@ -63,7 +64,7 @@ p {
   margin-bottom: 0;
 
   span {
-    color: $primary!important;
+    color: $primary !important;
   }
 
   &--home {
@@ -98,6 +99,7 @@ hr {
 
 #site-logo {
   opacity: 1;
+
   &:hover {
     opacity: 1;
   }
