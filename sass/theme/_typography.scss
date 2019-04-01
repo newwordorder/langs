@@ -22,6 +22,10 @@ body {
   font-family: $font-sans;
 }
 
+li {
+  list-style-position: inside;
+}
+
 h1,
 .h1,
 h2,

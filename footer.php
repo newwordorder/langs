@@ -114,12 +114,14 @@
                 zoom: 4,
                 center: new google.maps.LatLng(0, 0),
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
-                disableDefaultUI: true
+                disableDefaultUI: true,
+                mapTypeControl: false
             };
 
 
             // create map	        	
             var map = new google.maps.Map($el[0], args);
+
 
 
             // add a markers reference

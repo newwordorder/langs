@@ -16,11 +16,13 @@ if( get_row_layout() == 'feature_tiles' ):
 
           $text = get_sub_field('text_block');
           $image = get_sub_field('background_image');
+          $has_link = get_sub_field('has_link');
           $link = get_sub_field('link');
 
         ?>
 
         <div class="col-md-<?php echo $columns; ?> ">
+        <?php if($has_link): ?>
           <a href="<?php echo $link ?>">
             <div class="feature-tile  feature-tile--<?php echo $type ?> hover-element">
                 <div class="hover-element__initial" >
@@ -49,7 +51,34 @@ if( get_row_layout() == 'feature_tiles' ):
                   </div>
               </div>
             </a>
+          <?php else: ?>
+          <a>
+            <div class="feature-tile  feature-tile--<?php echo $type ?> ">
+                <div class="" >
+                  <?php
+                  $image = get_sub_field('background_image');
 
+                  if( !empty($image) ):
+
+                    // vars
+                    $url = $image['url'];
+                    $alt = $image['alt'];
+
+                    ?>
+                    <div class="background-image-holder" >
+                      <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+                    </div>
+                  <?php endif; ?>
+                </div>
+                <div class="feature-tile__content">
+                  <?php echo $text ?>
+
+                  <?php get_template_part( 'page-templates/blocks/block-partials/buttons' ); ?>
+                  </div>
+                  
+              </div>
+            </a>
+          <?php endif; ?>
 
 
 

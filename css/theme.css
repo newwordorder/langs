@@ -16019,6 +16019,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: "Montserrat", sans-serif; }
 
+li {
+  list-style-position: inside; }
+
 h1,
 .h1,
 h2,
@@ -16502,9 +16505,6 @@ hr.short {
     left: 1rem;
     right: 1rem;
     z-index: 3; }
-  .feature-tile:hover .background-image-holder {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); }
 
 .image {
   position: relative;
@@ -17193,6 +17193,16 @@ a {
 
 .wpcf7 {
   max-width: none; }
+
+.card-header .btn:before, .card-header .wpcf7 input[type=submit]:before, .wpcf7 .card-header input[type=submit]:before {
+  content: '\f054';
+  font-family: 'FontAwesome';
+  padding-right: 1rem; }
+
+.card-header .btn.collapsed:before, .card-header .wpcf7 input.collapsed[type=submit]:before, .wpcf7 .card-header input.collapsed[type=submit]:before {
+  content: '\f078';
+  font-family: 'FontAwesome';
+  padding-right: 1rem; }
 
 body[data-aos-duration='50'] [data-aos], [data-aos][data-aos][data-aos-duration='50'] {
   -webkit-transition-duration: 50ms;

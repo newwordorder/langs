@@ -13,13 +13,14 @@ if (get_row_layout() == 'feature_columns') :
 
 <?php if (have_rows('feature_columns_column')) : ?>
 <div class="container space-below--<?php echo $spaceBelow ?>">
-    <div class="row">
+    <div class="row justify-content-center">
         <?php while (have_rows('feature_columns_column')) : the_row();
 
           $text = get_sub_field('text_block');
           $image = get_sub_field('image');
           $icon = get_sub_field('icon');
           $map = get_sub_field('map');
+          $link = get_sub_field('directions_link')
 
           ?>
         <script>
@@ -81,9 +82,11 @@ if (get_row_layout() == 'feature_columns') :
                     <?php endif; ?>
 
                     <?php if ($type == 'map') : if (!empty($map)) : ?>
+                    <a  href="<?php echo $link; ?>" target="_blank">
                     <div class="acf-map">
                         <div class="marker" data-lat="<?php echo $map['lat']; ?>" data-lng="<?php echo $map['lng']; ?>"></div>
                     </div>
+                    </a>
                     <?php endif; ?>
                     <?php endif; ?>
 

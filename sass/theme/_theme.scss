@@ -508,3 +508,21 @@ a {
 .wpcf7 {
   max-width: none;
 }
+
+.card-header {
+  .btn {
+    &:before {
+      content: '\f054';
+      font-family: 'FontAwesome';
+      padding-right: 1rem;
+    }
+
+    &.collapsed {
+      &:before {
+        content: '\f078';
+        font-family: 'FontAwesome';
+        padding-right: 1rem;
+      }
+    }
+  }
+}
